@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class Like extends BaseEntity{
+public class Likes extends BaseEntity{
 
     @Column(nullable = false)
     private Long blogId;

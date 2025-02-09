@@ -11,7 +11,7 @@ import lombok.*;
 @Entity
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class User extends BaseEntity{
+public class Users extends BaseEntity{
 
     @Column(nullable = false)
     private String name;
