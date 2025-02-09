@@ -6,16 +6,14 @@ import lombok.*;
 
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Builder
-@NoArgsConstructor
-public class Blog extends BaseEntity {
-    private String imageUrl;
+public class Like extends BaseEntity{
+
     @Column(nullable = false)
-    private String heading;
+    private Long blogId;
     @Column(nullable = false)
     private Long userId;
-    @Column(nullable = false)
-    private String content;
 }

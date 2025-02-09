@@ -4,18 +4,17 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import lombok.*;
 
-@Entity
-@AllArgsConstructor
 @Data
 @EqualsAndHashCode(callSuper = true)
-@Builder
+@AllArgsConstructor
 @NoArgsConstructor
-public class Blog extends BaseEntity {
-    private String imageUrl;
+@Builder
+@Entity
+public class BlogCategoryLink extends BaseEntity {
+
     @Column(nullable = false)
-    private String heading;
+    private Long blogId;
     @Column(nullable = false)
-    private Long userId;
-    @Column(nullable = false)
-    private String content;
+    private Long categoryId;
 }
+
