@@ -23,7 +23,8 @@
 	</developers>
     <modules>
         <module>core</module>
-    </modules>
+		<module>persistence</module>
+	</modules>
     <scm>
 		<connection/>
 		<developerConnection/>
