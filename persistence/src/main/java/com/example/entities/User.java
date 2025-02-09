@@ -22,6 +22,8 @@ public class User extends BaseEntity{
     @Column(nullable = false)
     private String email;
 
+    private String password;
+
     private String Linkedin;
     private String instagram;
     private String facebook;
